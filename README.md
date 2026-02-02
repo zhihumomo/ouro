@@ -160,9 +160,7 @@ Mem, State = Hippocampus(Mem, State)
 
 可以发现 `State` 通过 `Hormone` 间接控制了整个网络. 
 
-这个项目我将其命名为 `Ouro`, 取自 `Ouroboros` 即衔尾蛇之意, 也隐含着"我们"的意思. 代码已经全部开源
-
-https://github.com/zhihumomo/ouro.git
+这个项目我将其命名为 `Ouro`, 取自 `Ouroboros` 即衔尾蛇之意, 也隐含着"我们"的意思. 代码已经全部开源 [Ouro](https://github.com/zhihumomo/ouro.git).
 
 下面对一些不常见的组件进行一下简单说明.
 
@@ -364,13 +362,9 @@ $$L = (\frac{1}{\sqrt{2}}L_{pre}-\sqrt{2}L_{ce})^2+\frac{1}{2} L_{pre}^2$$
 
 此外, 参照现在的训练范式, `Gridman` 的训练也分为预训练和微调, 唯一不同的是在整个过程中状态不进行重置, 从预训练开始一直传递到为微调结束.
 
-作者只全量训练了 `Gridman_Mini` 和 `Gridman_Small`, `Gridman_Small` 的训练日志已经存放于项目中
+作者只全量训练了 `Gridman_Mini` 和 `Gridman_Small`, `Gridman_Small` 的训练日志已经存放于项目中 [Ouro](https://github.com/zhihumomo/ouro.git).
 
-https://github.com/zhihumomo/ouro.git
-
-训练语料来自 Minimind 项目的 `pretrain_hq` 和 `sft_mini_512`. 在这里感谢 Minimind. Minimind 项目指路
-
-https://github.com/jingyaogong/minimind.git
+训练语料来自 Minimind 项目的 `pretrain_hq` 和 `sft_mini_512`. 在这里感谢 Minimind. Minimind 项目指路 -> [Minimind](https://github.com/jingyaogong/minimind.git).
 
 由于 `Ouro` 是字节级别端到端的, 你不需要对语料进行任何的预处理 (除了手动切分一下验证集). 如果你有自己的语料, 无论是什么语言 (甚至不是语言), 都可以无缝迁移至 `Ouro` 进行训练与测试.
 
