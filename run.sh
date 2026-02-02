@@ -1,0 +1,1 @@
+nohup bash scripts/supervisor.sh > log/supervisor.log 2>&1 &
